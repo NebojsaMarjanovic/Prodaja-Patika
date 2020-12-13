@@ -1,0 +1,155 @@
+body{ 
+    background:url("https://static.videezy.com/system/resources/thumbnails/000/009/594/original/white-soft-light-rays-fading-and-moving-on-dark-blue-background.jpg") no-repeat top center;
+    background-size: cover;
+}
+.tata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.roditelj{
+    text-align: center;
+    background-color:#cabbe9;
+    width: 50%;
+    padding: 5%;
+    margin-top: 3%;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: rgba(0,0,0,0.2);
+    color: #ffc7e8;
+}
+
+.roditelj h3{
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.roditelj p{
+    font-size: x-large;
+}
+
+.roditelj img{
+    width: 250px;
+    border-radius: 20px;
+}
+
+input{
+    margin-top: 5%;
+    border-radius: 5px;
+    width: 110px;
+    padding: 5px;
+    background-color: #ffc7e8;
+    border: 2pt solid #0e153a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input:hover{
+    background-color: #ff0195;
+}
+
+/*Header-nav bar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e153a;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.nav-ul li a:hover{
+    color: #e74c3c;
+}
+
+.menu-button{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+    .roditelj{
+        width: 80%;
+  
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+    .nav-ul{
+        display:none;
+        flex-direction:column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #prvi{
+        border-top: 2pt solid black ;
+    }
+
+    .nav-ul li{
+        border-bottom: 2pt solid black ;
+        width: 100%;
+    }
+
+    .nav-ul.show{
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-button{
+        display: block;
+        margin-right: 4%;
+    }
+
+    
+
+    .roditelj{
+        width: 80%;
+  
+    }
+    .roditelj h3{
+        font-size: 1.5em;
+    }
+    .roditelj p{
+        font-size: 0.85em;
+    }
+}
+
+
+@media screen and (max-width:660px){
+    
+    .roditelj img{
+    width: 80%;
+    }
+}
+
+
+ 
+
+

@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+ 
+    
+}
+
+body{
+    background:url("https://static.videezy.com/system/resources/thumbnails/000/009/594/original/white-soft-light-rays-fading-and-moving-on-dark-blue-background.jpg") no-repeat top center;
+    background-size: cover;
+    height: 97vh;
+   
+}
+
+#forma{
+    display: block;
+    text-align: center;
+    
+}
+
+form{
+    color:#c5ecfd;
+    display: inline-block;
+    text-align: left;
+    margin-top: 10%;
+    background-color: rgba(0,0,0,0.8) ;
+    box-shadow: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    font-size: medium;
+    width: 500px;
+}
+
+#unutar{
+    margin: 5%;
+}
+
+.label{
+    width: 30%;
+    display: inline-block;
+  
+}
+
+.button{
+    text-align: right;
+}
+
+#potvrdi{
+    width:75px;
+    background-color: #39b7dd;
+    color:rgba(0,0,0,0.8);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3%;
+}
+
+#ponisti{
+    width:75px;
+    background-color: #39b7dd;
+    color: rgba(0,0,0,0.8);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 3%;
+}
+
+#potvrdi:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: #c5ecfd;
+}
+
+#ponisti:hover{
+
+    background-color:  rgba(0,0,0,0.8);
+    color: #c5ecfd;
+}
+
+.input{
+    width: 50%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #c5ecfd;
+    color: #c5ecfd;
+}
+
+select{
+    background-color:rgba(0,0,0,0.8);
+}
+
+::-webkit-input-placeholder{
+    color:#c5ecfd ;
+}
+
+#model{
+    color: #c5ecfd;
+    background-color: black;
+}
+
+#velicina{
+    color: #c5ecfd;
+    background-color: black;
+}
+
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e153a;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.nav-ul li a:hover{
+    color: #e74c3c;
+}
+
+.menu-button{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+    .nav-ul{
+        display:none;
+        flex-direction:column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #prvi{
+        border-top: 2pt solid black ;
+    }
+
+    .nav-ul li{
+        border-bottom: 2pt solid black ;
+        width: 100%;
+    }
+
+    .nav-ul.show{
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-button{
+        display: block;
+        margin-right: 4%;
+    }
+}
+
+@media screen and (max-width:560px){
+    form{
+        width: 85%;
+    }
+}

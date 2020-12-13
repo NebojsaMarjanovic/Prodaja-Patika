@@ -1,0 +1,146 @@
+
+
+body{
+    text-align: center;
+    background: url("https://static.videezy.com/system/resources/thumbnails/000/009/594/original/white-soft-light-rays-fading-and-moving-on-dark-blue-background.jpg") no-repeat top center;
+    background-size: cover;
+    height: 120vh;
+}
+
+.gradovi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    
+}
+
+#kontakt{
+    order: 2;
+    align-self: flex-start;
+    text-align: center;
+    font-size: large;
+    width: 40%;
+}
+
+#smederevo{
+    order: 1;
+    align-self: center;
+    height: 60%;
+    width: 40%;
+    padding: 2%;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: rgba(0,0,0,0.2);
+    color: #c5ecfd;
+    border-radius: 5%;
+    font-size: medium;
+    margin: 5%;
+}
+
+#uzice{
+    order: 3;
+    height: 60%;
+    width: 40%;
+    padding: 2%;
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: rgba(0,0,0,0.2);
+    color: #c5ecfd;
+    border-radius: 5%;
+    font-size: medium;
+    margin: 5%;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e153a;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height: 60px;
+}
+
+.nav-ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-ul li a{
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.nav-ul li a:hover{
+    color: #e74c3c;
+}
+
+.menu-button{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    display: none;
+}
+
+
+@media screen and (max-width:768px){
+
+    .nav-ul{
+        display:none;
+        flex-direction:column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    #prvi{
+        border-top: 2pt solid black ;
+    }
+
+    .nav-ul li{
+        border-bottom: 2pt solid black ;
+        width: 100%;
+    }
+
+    .nav-ul.show{
+        display: flex;
+        text-align: center;
+    }
+
+    .menu-button{
+        display: block;
+        margin-right: 4%;
+    }
+}
+
+
+
+@media screen and (max-width:1000px){
+    body{
+        height: 100%;
+    }
+    
+    .gradovi{
+        display: block;
+        
+    }
+    #smederevo{
+        width:60%;
+        margin: 18%;
+        
+    }
+    #uzice{
+        width:60%;
+        margin: 18%;
+    }
+}
+
+

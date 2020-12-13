@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/forma.css">
+    <title>Forma</title>
+
+</head>
+<body>
+       
+    
+
+    <nav>
+        <img src="../img/logo.png" class="logo">
+
+        <button class="menu-button" id="menu-button" onclick="funkcija()">
+            <i class="fas fa-bars fa-3x"></i>
+        </button>
+        
+        
+
+        <ul class="nav-ul" id="nav-ul">
+            <li id="prvi"><a href="../index.html">Početna</a></li>
+            <li><a href="../pages/muske.html">Muške patike</a></li>
+            <li><a href="../pages/zenske.html">Ženske patike</a></li>
+            <li><a href="../pages/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    
+
+
+      
+    
+
+   
+
+
+
+<div id="forma">
+    <form id="form">
+        <div id="unutar">
+        <label for="model" class="label">Muški modeli:</label>
+        <select id="model">
+            <option value="nike">Air-Max 2090-->150$</option>
+            <option value="adidas">New balance-->100$</option>
+            <option value="puma">Champion speed-->70$</option>
+            <option value="nike">Reebok almotio-->90$</option>
+            <option value="adidas">Puma sneakers-->115$</option>
+            <option value="puma">Adidas ultraboost-->180$</option>
+        </select><br>
+        <label for="velicina" class="label">Veličina:</label>
+        <select id="velicina">
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                    <option value="44">44</option>
+                    <option value="45">45</option>
+                    <option value="46">46</option>
+                    <option value="47">47</option>
+                    <option value="48">48</option>
+                    <option value="49">49</option>
+                    <option value="50">50</option>
+        </select><br><br>
+    
+
+        <label for="model" class="label">Ženski modeli:</label>
+        <select id="model">
+            <option >Adidas-->120$</option>
+            <option >Converse-->100$</option>
+            <option >New Balance-->80$</option>
+            <option>Puma-->95$</option>
+            <option>Nike-->110$</option>
+            <option>Reebok-->80$</option>
+        </select><br>
+        <label for="velicina" class="label">Veličina:</label>
+        <select id="velicina">
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+        </select><br><br>
+    
+        
+        <label for="ime" class="label">Ime: </label>
+        <input type="text" id="ime" required placeholder="Ime" class="input"><br><br>
+        
+
+        
+        <label for="ime" class="label">Prezime: </label>
+        <input type="text" id="prezime" required placeholder="Prezime" class="input"><br><br>
+        
+
+        
+        <label for="ime" class="label">Adresa: </label>
+        <input type="text" id="adresa" required placeholder="Adresa" class="input"><br><br>
+        
+
+        
+        <label for="ime" class="label">E-mail: </label>
+        <input type="email" id="email" required placeholder="E-mail" class="input"><br><br>
+        
+
+        Način plaćanja:<br>
+        <input type="radio" id="pouzecem" name="placanje" value="pouzecem" required>
+        <label for="pouzecem">Plaćanje pouzećem gotovinski u trenutku isporuke</label>
+        <br>
+        <input type="radio" id="karticom" name="placanje" value="karticom" required>
+        <label for="karticom">Platnom karticom tokom kupovine na sajtu</label><br><br>
+
+        <div class="button">
+        <button onclick="alert_funkcija()" id="potvrdi">Potvrdi</button>
+        <input type="reset" value="Poništi" id="ponisti">
+        </div>
+        
+        </div>
+    </form>
+
+    <p id="time" style="font-size: 20px;"></p>
+    
+</div>
+<div id="time"></div>
+
+   
+<script src="../scripts/forma.js"></script>
+<script src="https://kit.fontawesome.com/417824116f.js" crossorigin="anonymous"></script>
+</body>
+</html>
